@@ -1,8 +1,8 @@
 # ESP8266 Enocean
 
-Firmware für den ESP8266 um mittels des EnOcean Pi Funkmoduls Fenstergriffe an den Loxone Miniserver anzubinden.
+Firmware für den ESP8266 um mittels des EnOcean Pi Funkmoduls Fenstergriffe an den Loxone Miniserver anzubinden. Weitere Enocean Telegramm-Typen können einfach hinzugefügt werden.
 
-Der ESP8266 sendet per UDP die Werte auf virtuellen UDP-Eingänge. Die Eingagnswerte sind direkt mit dem Eingang ```AIw``` des Bausteins ```Fensterüberwachung``` kompatibel.
+Der ESP8266 sendet per UDP die Werte auf virtuellen UDP-Eingänge des Loxone Miniservers. Die Eingagnswerte sind direkt mit dem Eingang ```AIw``` des Bausteins ```Fensterüberwachung``` kompatibel.
 ![Loxone](https://www.loxone.com/dede/wp-content/uploads/sites/2/2016/12/Fenster%C3%BCberwachung.png)
 
 ## Software
@@ -15,7 +15,8 @@ Der ESP8266 sendet per UDP die Werte auf virtuellen UDP-Eingänge. Die Eingagnsw
 
 ### Loxone
 
-Virtueller UDP Eingang
+Virtueller UDP Eingang erstellen pro Fenstergriff:
+- https://www.loxone.com/dede/kb/kommunikation-mit-udp/
 - Befehl: ```[Esszimmer=\v]```
 - Beispiel: ```[Esszimmer=3]```
 
